@@ -88,6 +88,7 @@ df['Hemoglobina Glucosilada'] = df['Hemoglobina Glucosilada'].round(decimals=1)
 """
 Gráficas
 """
+
 df.plot.scatter(y="glucosa pos carga (mg/dl) 2h > 75 g ",x="Glucosa en ayunas (mg/dl)")
 pd.plotting.scatter_matrix(df) 
 #%%
@@ -113,7 +114,6 @@ df["glucosa pos carga (mg/dl) 2h > 75 g "].plot.box()
 df["Hemoglobina Glucosilada"].plot.hist()
 df["Hemoglobina Glucosilada"].plot.density()
 df["Hemoglobina Glucosilada"].plot.box()
-# Hola que tal
 
                                 
 
