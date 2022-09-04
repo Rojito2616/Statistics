@@ -88,6 +88,31 @@ df['Hemoglobina Glucosilada'] = df['Hemoglobina Glucosilada'].round(decimals=1)
 """
 Gráficas
 """
+df.plot.scatter(y="glucosa pos carga (mg/dl) 2h > 75 g ",x="Glucosa en ayunas (mg/dl)")
+pd.plotting.scatter_matrix(df) 
+#%%
+corre = pd.DataFrame(df.corr())
+
+serie = df["T2D= diabetes tipo 2. \n"].value_counts()
+serie.plot.pie(autopct='%1.1f%%')
+serie.plot.bar()
+
+#%%
+# Gráficas de Glucosa en ayunas (mg/dl)
+df["Glucosa en ayunas (mg/dl)"].plot.hist()
+df["Glucosa en ayunas (mg/dl)"].plot.density()
+df["Glucosa en ayunas (mg/dl)"].plot.box()
+#%%
+# glucosa pos carga (mg/dl) 2h > 75 g           
+df["glucosa pos carga (mg/dl) 2h > 75 g "].plot.hist()
+df["glucosa pos carga (mg/dl) 2h > 75 g "].plot.density()
+df["glucosa pos carga (mg/dl) 2h > 75 g "].plot.box()
+
+#%%
+# Hemoglobina Glucosilada           
+df["Hemoglobina Glucosilada"].plot.hist()
+df["Hemoglobina Glucosilada"].plot.density()
+df["Hemoglobina Glucosilada"].plot.box()
 
                                 
 
