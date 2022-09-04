@@ -113,6 +113,7 @@ df["glucosa pos carga (mg/dl) 2h > 75 g "].plot.box()
 df["Hemoglobina Glucosilada"].plot.hist()
 df["Hemoglobina Glucosilada"].plot.density()
 df["Hemoglobina Glucosilada"].plot.box()
+# Hola que tal
 
                                 
 
